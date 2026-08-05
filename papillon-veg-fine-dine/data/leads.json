@@ -1,0 +1,47 @@
+[
+  {
+    "id": "PAPILLON-1766",
+    "type": "Table Reservation",
+    "name": "sample",
+    "phone": "9999999999",
+    "email": "abc@abc.in",
+    "date": "2026-08-05",
+    "time": "07:30 PM",
+    "guests": "2",
+    "area": "Main Dining Room",
+    "notes": "Dietary: Standard Pure Veg. sample ",
+    "status": "Confirmed",
+    "createdAt": "8/5/2026, 9:39:16 PM",
+    "tableNumber": "Unassigned"
+  },
+  {
+    "id": "PAPILLON-7821",
+    "type": "Table Reservation",
+    "name": "Rajesh Sharma",
+    "phone": "+91 98765 43210",
+    "email": "rajesh.sharma@example.com",
+    "date": "2026-08-08",
+    "time": "08:00 PM",
+    "guests": 4,
+    "area": "Main Dining Room",
+    "tableNumber": "T-04 (Booth)",
+    "notes": "Anniversary celebration, needs Jain food options",
+    "status": "Confirmed",
+    "createdAt": "2026-08-05 14:30"
+  },
+  {
+    "id": "PAPILLON-9014",
+    "type": "Banquet Inquiry",
+    "name": "Priya Mehta",
+    "phone": "+91 98220 11223",
+    "email": "priya.mehta@example.com",
+    "date": "2026-08-15",
+    "time": "Lunch (12:30 PM)",
+    "guests": 120,
+    "area": "Grand AC Banquet Hall",
+    "tableNumber": "Banquet Section A",
+    "notes": "Birthday Party with Gold Buffet package",
+    "status": "Inquiry Received",
+    "createdAt": "2026-08-05 16:15"
+  }
+]

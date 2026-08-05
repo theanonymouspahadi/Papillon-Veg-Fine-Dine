@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Papillon Veg Fine Dine & Grand Banquet | 100% Pure Vegetarian Fine Dining</title>
+  <meta name="description" content="Welcome to Papillon Veg Fine Dine. Experience our 200+ item authentic & modern vegetarian menu, zero-alcohol artisanal mocktail bar, cozy ambiance, and grand AC banquet services.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="top-bar-badges">
+      <span class="badge-pill badge-veg"><i class="fas fa-leaf"></i> 100% Pure Vegetarian</span>
+      <span class="badge-pill badge-zero-alc"><i class="fas fa-cocktail"></i> Zero Alcohol / Artisanal Mocktail Bar</span>
+      <span class="badge-pill"><i class="fas fa-glass-cheers"></i> AC Banquet Hall (50-250 Guests)</span>
+    </div>
+    <div>
+      <i class="fas fa-clock" style="color:var(--gold-primary);"></i> Open Daily: 12:00 PM – 3:30 PM & 7:00 PM – 11:00 PM
+    </div>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header class="navbar">
+    <a href="#" class="brand-logo">
+      <div class="brand-icon"><i class="fas fa-utensils"></i></div>
+      <div class="brand-name">Papillon <span>Veg Fine Dine</span></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#hero" class="active">Home</a></li>
+      <li><a href="#cuisines">200+ Dishes Menu</a></li>
+      <li><a href="#mocktails">Mocktail Bar</a></li>
+      <li><a href="#banquet">Banquet Hall</a></li>
+      <li><a href="#ambiance">Ambiance</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="icon-btn" id="soundscapeBtn" title="Play Ambient Soundscape"><i class="fas fa-volume-high"></i></button>
+      <a href="admin.html" target="_blank" class="icon-btn" title="Standalone Staff Manager Portal"><i class="fas fa-user-shield"></i></a>
+      <button class="btn btn-gold" onclick="openModal('bookingModal')"><i class="fas fa-calendar-check"></i> Reserve Table</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-subtitle"><i class="fas fa-star"></i> Accessible Fine Dining & Celebrations</div>
+      <h1 class="hero-title">Where <span>Pure Vegetarian</span> Craft Meets Warm Luxury.</h1>
+      <p class="hero-desc">Explore our expansive 200+ item menu featuring rich North Indian gravies, wok-tossed Asian delicacies, handcrafted Italian pizza & pasta, sizzling fusion platters, and refreshing zero-alcohol mocktails.</p>
+      <div class="hero-buttons">
+        <button class="btn btn-gold" onclick="openModal('bookingModal')"><i class="fas fa-utensils"></i> Book a Table</button>
+        <a href="#cuisines" class="btn btn-outline"><i class="fas fa-book-open"></i> Browse 200+ Menu</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <h3>200+</h3>
+          <p>Curated Veg Dishes</p>
+        </div>
+        <div class="stat-item">
+          <h3>250+</h3>
+          <p>Banquet Guest Capacity</p>
+        </div>
+        <div class="stat-item">
+          <h3>4.8 ★</h3>
+          <p>Verified Diner Rating</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-img-frame">
+        <img src="assets/images/hero.png" alt="Papillon Signature Vegetarian Plating">
+        <div class="floating-badge">
+          <div class="icon"><i class="fas fa-award"></i></div>
+          <div>
+            <h4 style="color:var(--text-main); font-size:0.95rem;">Chef's Signature Selection</h4>
+            <p style="color:var(--text-muted); font-size:0.8rem;">100% Organic & Fresh Daily</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Reservation Search Bar -->
+  <div class="quick-reserve-bar">
+    <div class="form-group">
+      <label><i class="fas fa-users"></i> Guests</label>
+      <select id="quickGuests">
+        <option value="2">2 Guests (Couple)</option>
+        <option value="4" selected>4 Guests (Family)</option>
+        <option value="6">6 Guests (Group)</option>
+        <option value="10">10+ Guests (Party)</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label><i class="fas fa-calendar"></i> Date</label>
+      <input type="date" id="quickDate">
+    </div>
+    <div class="form-group">
+      <label><i class="fas fa-clock"></i> Meal Slot</label>
+      <select id="quickTime">
+        <option value="12:30 PM">Lunch: 12:30 PM</option>
+        <option value="01:30 PM">Lunch: 01:30 PM</option>
+        <option value="07:30 PM" selected>Dinner: 07:30 PM</option>
+        <option value="08:45 PM">Dinner: 08:45 PM</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label><i class="fas fa-chair"></i> Seating</label>
+      <select id="quickArea">
+        <option value="Main Dining Room">Main Dining Room</option>
+        <option value="Garden Terrace">Garden Terrace</option>
+        <option value="AC Banquet Hall">AC Banquet Hall</option>
+      </select>
+    </div>
+    <button class="btn btn-gold" onclick="openModal('bookingModal')" style="height:44px; align-self:end;"><i class="fas fa-search"></i> Check Availability</button>
+  </div>
+
+  <!-- 200+ Cuisines Showcase Engine -->
+  <section class="section" id="cuisines">
+    <div class="section-title-wrap">
+      <div class="section-tag"><i class="fas fa-book-open"></i> Expansive Culinary Directory</div>
+      <h2 class="section-title">Grand Vegetarian Menu (200+ Items)</h2>
+      <p class="section-subtitle">Search, filter by course, toggle Jain specialties, or switch between our physical-style Digital Menu Book & Visual Cards.</p>
+    </div>
+
+    <!-- Menu Control Toolbar -->
+    <div class="menu-toolbar">
+      <div class="search-field-wrap">
+        <i class="fas fa-search" style="color:var(--gold-primary);"></i>
+        <input type="text" id="menuSearchInput" placeholder="Search 200+ dishes or ingredients (Paneer, Truffle, Dal...)...">
+      </div>
+
+      <div style="display:flex; gap:12px; align-items:center; flex-wrap:wrap;">
+        <button class="filter-btn-jain" id="btnJainFilter" onclick="toggleJainFilter()"><i class="fas fa-leaf"></i> Jain Only (No Onion/Garlic)</button>
+        
+        <div class="view-mode-toggle">
+          <button class="view-btn active" id="btnViewBook" onclick="toggleViewMode('book')"><i class="fas fa-book"></i> Menu Book View</button>
+          <button class="view-btn" id="btnViewGrid" onclick="toggleViewMode('grid')"><i class="fas fa-border-all"></i> Visual Cards</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category Quick-Jumper Pills Bar -->
+    <div class="category-jumper-wrap" id="categoryJumper">
+      <!-- Dynamic JS rendering -->
+    </div>
+
+    <!-- Dynamic Menu Content Container -->
+    <div id="menuContainer">
+      <!-- Dynamic JS rendering for Menu Book vs Visual Grid -->
+    </div>
+  </section>
+
+  <!-- Highlights Banner (Zero Alcohol & Pure Veg) -->
+  <section class="highlight-banner" id="mocktails">
+    <div class="banner-text">
+      <span class="badge-pill badge-zero-alc" style="margin-bottom:12px;"><i class="fas fa-shield-halved"></i> Zero Alcohol Establishment</span>
+      <h2>Artisanal Refreshment & Craft Mocktail Bar</h2>
+      <p style="color:var(--text-muted); font-size:1.05rem;">We take pride in serving 100% Pure Vegetarian food with zero alcohol. Enjoy handcrafted fruit infusions, spiced guava sparklers, botanical coolers, and thick dry-fruit shakes prepared fresh at our alcohol-free bar.</p>
+      <div class="banner-features">
+        <div class="feature-box">
+          <h4><i class="fas fa-leaf" style="color:#2ECC71;"></i> Pure Veg Kitchen</h4>
+          <p style="font-size:0.85rem; color:var(--text-muted);">Strict hygiene and separate Jain food preparation area.</p>
+        </div>
+        <div class="feature-box">
+          <h4><i class="fas fa-glass-water" style="color:#38E8C6;"></i> Artisanal Coolers</h4>
+          <p style="font-size:0.85rem; color:var(--text-muted);">Fresh juices, exotic passionfruit fizz & crushed mint mocktails.</p>
+        </div>
+      </div>
+    </div>
+    <div style="position:relative; text-align:center;">
+      <img src="assets/images/mocktail.png" alt="Artisanal Mocktail at Papillon" style="width:100%; max-width:420px; border-radius:var(--radius-md); border:1px solid var(--border-gold); box-shadow:var(--shadow-main);">
+    </div>
+  </section>
+
+  <!-- Banquet & Event Hosting Showcase -->
+  <section class="section banquet-section" id="banquet">
+    <div class="section-title-wrap">
+      <div class="section-tag"><i class="fas fa-glass-cheers"></i> Celebrations & Events</div>
+      <h2 class="section-title">Grand AC Banquet Service</h2>
+      <p class="section-subtitle">Host your birthdays, anniversaries, corporate dinners, and family get-togethers in our air-conditioned banquet hall.</p>
+    </div>
+
+    <div class="banquet-container">
+      <div>
+        <img src="assets/images/banquet.png" alt="Papillon Banquet Hall Setup" style="width:100%; border-radius:var(--radius-lg); border:1px solid var(--border-gold); box-shadow:var(--shadow-main); margin-bottom:24px;">
+        <h3 style="font-size:1.8rem; margin-bottom:12px; color:var(--text-main);">Why Host Your Event at Papillon?</h3>
+        <p style="color:var(--text-muted); margin-bottom:16px;">Our dedicated event team handles everything from custom 100% Pure Veg buffet menus to ambient lighting, music, and seating arrangements for 50 to 250 guests.</p>
+        <ul class="banquet-features-list">
+          <li><i class="fas fa-check-circle"></i> Capacity: 50 to 250 Guests</li>
+          <li><i class="fas fa-check-circle"></i> Centralized Air-Conditioning</li>
+          <li><i class="fas fa-check-circle"></i> Customizable Multi-Cuisine Buffet</li>
+          <li><i class="fas fa-check-circle"></i> Dedicated Jain Food Counters</li>
+          <li><i class="fas fa-check-circle"></i> Audio & Stage Lighting Setup</li>
+          <li><i class="fas fa-check-circle"></i> Ample Valet Parking Service</li>
+        </ul>
+      </div>
+
+      <!-- Banquet Inquiry Lead Form -->
+      <div class="banquet-card">
+        <h3 style="font-size:1.6rem; color:var(--gold-glow); margin-bottom:8px;"><i class="fas fa-envelope-open-text"></i> Event & Banquet Inquiry</h3>
+        <p style="font-size:0.88rem; color:var(--text-muted); margin-bottom:20px;">Fill in your event details below to receive a custom package quotation within 2 hours.</p>
+        
+        <form class="banquet-form" id="banquetForm">
+          <div class="form-group">
+            <label>Full Name *</label>
+            <input type="text" id="bqName" placeholder="e.g. Ramesh Patel" required>
+          </div>
+          <div class="form-group">
+            <label>Phone Number *</label>
+            <input type="tel" id="bqPhone" placeholder="+91 98765 43210" required>
+          </div>
+          <div class="form-group">
+            <label>Event Type *</label>
+            <select id="bqEventType">
+              <option value="Birthday Party">Birthday Celebration</option>
+              <option value="Anniversary">Anniversary Event</option>
+              <option value="Corporate Meet">Corporate Dinner</option>
+              <option value="Engagement">Pre-Wedding / Engagement</option>
+              <option value="Family Gathering">Family Get-Together</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Expected Guests</label>
+            <select id="bqGuests">
+              <option value="50-75">50 – 75 Guests</option>
+              <option value="75-120" selected>75 – 120 Guests</option>
+              <option value="120-200">120 – 200 Guests</option>
+              <option value="200+">200+ Guests</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Tentative Date *</label>
+            <input type="date" id="bqDate" required>
+          </div>
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" id="bqEmail" placeholder="name@example.com">
+          </div>
+          <div class="form-group full-width">
+            <label>Special Requests / Buffet Preferences</label>
+            <input type="text" id="bqNotes" placeholder="e.g. Need Jain counters, balloon decoration setup...">
+          </div>
+          <div class="full-width" style="margin-top:10px;">
+            <button type="submit" class="btn btn-gold" style="width:100%;"><i class="fas fa-paper-plane"></i> Submit Banquet Inquiry</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ambiance Explorer -->
+  <section class="section" id="ambiance">
+    <div class="section-title-wrap">
+      <div class="section-tag"><i class="fas fa-camera"></i> Atmosphere & Spaces</div>
+      <h2 class="section-title">The Papillon Ambiance</h2>
+      <p class="section-subtitle">Comfortable, elegant dining spaces tailored for every dining occasion.</p>
+    </div>
+
+    <div class="ambiance-grid">
+      <div class="ambiance-main-view">
+        <img id="ambianceMainImg" src="assets/images/ambiance.png" alt="Grand Dining Hall">
+        <div class="ambiance-info-overlay">
+          <h3 id="ambianceTitle" style="font-size:1.8rem; color:var(--text-main);">Grand Main Dining Hall</h3>
+          <p id="ambianceDesc" style="color:var(--text-muted);">Spacious, warm amber lighting with lush green velvet booths and acoustic comfort. Perfect for family lunches and cozy dinner dates.</p>
+        </div>
+      </div>
+
+      <div class="ambiance-thumbs">
+        <div class="thumb-card active" data-room="dining">
+          <div class="thumb-img"><img src="assets/images/ambiance.png" alt="Dining Hall"></div>
+          <div>
+            <h4 style="color:var(--text-main); font-size:1rem;">Main Dining Hall</h4>
+            <p style="color:var(--text-muted); font-size:0.8rem;">Warm lighting & velvet booths</p>
+          </div>
+        </div>
+        <div class="thumb-card" data-room="terrace">
+          <div class="thumb-img"><img src="assets/images/hero.png" alt="Terrace"></div>
+          <div>
+            <h4 style="color:var(--text-main); font-size:1rem;">Open-Air Terrace</h4>
+            <p style="color:var(--text-muted); font-size:0.8rem;">Serene greenery & evening breeze</p>
+          </div>
+        </div>
+        <div class="thumb-card" data-room="banquet">
+          <div class="thumb-img"><img src="assets/images/banquet.png" alt="Banquet"></div>
+          <div>
+            <h4 style="color:var(--text-main); font-size:1rem;">AC Banquet Hall</h4>
+            <p style="color:var(--text-muted); font-size:0.8rem;">Celebrations for 50-250 guests</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Reviews Section -->
+  <section class="section" id="reviews" style="background:rgba(0,0,0,0.2);">
+    <div class="section-title-wrap">
+      <div class="section-tag"><i class="fas fa-heart"></i> Diners Speak</div>
+      <h2 class="section-title">What Our Guests Say</h2>
+      <p class="section-subtitle">Over 10,000+ satisfied families & food connoisseurs.</p>
+    </div>
+
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p style="color:var(--text-muted); font-size:0.95rem;">"The Dal Papillon and Sizzling Platter were extraordinary! Finding a 100% pure veg place with such sophisticated ambiance and great Jain options is rare. Highly recommended!"</p>
+        <div class="reviewer-name">Vikram Shah</div>
+        <div class="reviewer-tag">Family Dinner • Google Reviewer</div>
+      </div>
+
+      <div class="review-card">
+        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p style="color:var(--text-muted); font-size:0.95rem;">"We hosted our parents' 30th Anniversary at Papillon AC Banquet Hall for 110 guests. The buffet food was hot, delicious, and the service was flawless!"</p>
+        <div class="reviewer-name">Ananya Deshmukh</div>
+        <div class="reviewer-tag">Banquet Event Host</div>
+      </div>
+
+      <div class="review-card">
+        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p style="color:var(--text-muted); font-size:0.95rem;">"Love the zero-alcohol mocktail bar! The Guava Chili sparkler and Wood-fired pizza were incredible. Very courteous staff."</p>
+        <div class="reviewer-name">Karan Patel</div>
+        <div class="reviewer-tag">Weekend Dining</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <div class="brand-logo" style="margin-bottom:16px;">
+          <div class="brand-icon"><i class="fas fa-utensils"></i></div>
+          <div class="brand-name">Papillon <span>Veg Fine Dine</span></div>
+        </div>
+        <p style="margin-bottom:16px;">A premier 100% Pure Vegetarian fine dining restaurant & AC banquet venue. Celebrating pure culinary flavors, warm hospitality, and memorable events.</p>
+        <p style="font-size:0.85rem; color:var(--gold-glow);"><i class="fas fa-shield-halved"></i> 100% Pure Veg • Zero Alcohol Establishment</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#cuisines">200+ Cuisines Menu</a></li>
+          <li><a href="#mocktails">Artisanal Mocktails</a></li>
+          <li><a href="#banquet">AC Banquet Booking</a></li>
+          <li><a href="#ambiance">Ambiance Gallery</a></li>
+          <li><a href="admin.html" target="_blank">Staff Manager Portal</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Operating Hours</h4>
+        <p style="font-size:0.9rem; margin-bottom:8px;"><strong>Lunch Service:</strong><br>12:00 PM – 03:30 PM</p>
+        <p style="font-size:0.9rem;"><strong>Dinner Service:</strong><br>07:00 PM – 11:00 PM</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact & Location</h4>
+        <p style="font-size:0.9rem; margin-bottom:8px;"><i class="fas fa-map-marker-alt" style="color:var(--gold-primary);"></i> Grand Galleria Avenue, Green Park Road</p>
+        <p style="font-size:0.9rem; margin-bottom:8px;"><i class="fas fa-phone" style="color:var(--gold-primary);"></i> +91 98765 00011 / 022-24567890</p>
+        <p style="font-size:0.9rem;"><i class="fas fa-envelope" style="color:var(--gold-primary);"></i> reserve@papillonfineveg.com</p>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>&copy; 2026 Papillon Veg Fine Dine & Banquet Services. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Modal 1: Table Reservation Multi-step Wizard -->
+  <div class="modal-overlay" id="bookingModal">
+    <div class="modal-container">
+      <button class="modal-close" onclick="closeModal('bookingModal')">&times;</button>
+      
+      <div class="wizard-steps">
+        <div class="step-item active">1</div>
+        <div class="step-item">2</div>
+        <div class="step-item">3</div>
+      </div>
+
+      <div class="wizard-content">
+        <!-- Step 1: Party & Date Selection -->
+        <div class="wizard-step-content" id="wizardStep1">
+          <h3 style="font-size:1.5rem; color:var(--text-main); margin-bottom:16px;"><i class="fas fa-calendar-alt" style="color:var(--gold-primary);"></i> Step 1: Select Dining Details</h3>
+          <div class="form-group" style="margin-bottom:16px;">
+            <label>Number of Guests</label>
+            <select id="bookGuests">
+              <option value="1">1 Guest</option>
+              <option value="2" selected>2 Guests (Couple Table)</option>
+              <option value="4">4 Guests (Family Table)</option>
+              <option value="6">6 Guests (Booth)</option>
+              <option value="8">8+ Guests (Large Table)</option>
+            </select>
+          </div>
+          <div class="form-group" style="margin-bottom:16px;">
+            <label>Reservation Date</label>
+            <input type="date" id="bookDate">
+          </div>
+          <div class="form-group" style="margin-bottom:16px;">
+            <label>Preferred Time Slot</label>
+            <select id="bookTime">
+              <option value="12:30 PM">Lunch - 12:30 PM</option>
+              <option value="01:30 PM">Lunch - 01:30 PM</option>
+              <option value="02:30 PM">Lunch - 02:30 PM</option>
+              <option value="07:30 PM" selected>Dinner - 07:30 PM</option>
+              <option value="08:30 PM">Dinner - 08:30 PM</option>
+              <option value="09:30 PM">Dinner - 09:30 PM</option>
+            </select>
+          </div>
+          <div class="form-group" style="margin-bottom:24px;">
+            <label>Seating Preference</label>
+            <select id="bookArea">
+              <option value="Main Dining Room">Main Dining Room (Velvet Booths)</option>
+              <option value="Garden Terrace">Open-Air Garden Terrace</option>
+              <option value="Family Private Corner">Family Private Corner</option>
+            </select>
+          </div>
+          <button class="btn btn-gold" style="width:100%;" onclick="nextWizardStep(2)">Proceed to Contact Details <i class="fas fa-arrow-right"></i></button>
+        </div>
+
+        <!-- Step 2: Customer Contact & Preferences -->
+        <div class="wizard-step-content" id="wizardStep2" style="display:none;">
+          <h3 style="font-size:1.5rem; color:var(--text-main); margin-bottom:16px;"><i class="fas fa-user-check" style="color:var(--gold-primary);"></i> Step 2: Contact Information</h3>
+          <div class="form-group" style="margin-bottom:14px;">
+            <label>Full Name *</label>
+            <input type="text" id="bookName" placeholder="e.g. Sunita Shah" required>
+          </div>
+          <div class="form-group" style="margin-bottom:14px;">
+            <label>Phone Number (For SMS Confirmation) *</label>
+            <input type="tel" id="bookPhone" placeholder="+91 98765 43210" required>
+          </div>
+          <div class="form-group" style="margin-bottom:14px;">
+            <label>Email Address</label>
+            <input type="email" id="bookEmail" placeholder="sunita@example.com">
+          </div>
+          <div class="form-group" style="margin-bottom:14px;">
+            <label>Dietary Requirement</label>
+            <select id="bookDietary">
+              <option value="Standard Pure Veg">Standard 100% Pure Veg</option>
+              <option value="Jain Food (No Onion/Garlic)">Jain Food (Strictly No Onion/Garlic)</option>
+              <option value="Gluten-Free">Gluten-Free / Vegan</option>
+            </select>
+          </div>
+          <div class="form-group" style="margin-bottom:24px;">
+            <label>Special Requests / Tasting Preference</label>
+            <input type="text" id="bookNotes" placeholder="e.g. Celebrating Anniversary, interested in Tandoori Paneer...">
+          </div>
+          <div style="display:flex; gap:12px;">
+            <button class="btn btn-outline" style="width:40%;" onclick="prevWizardStep(1)"><i class="fas fa-arrow-left"></i> Back</button>
+            <button class="btn btn-gold" style="width:60%;" onclick="nextWizardStep(3)">Confirm Booking <i class="fas fa-check"></i></button>
+          </div>
+        </div>
+
+        <!-- Step 3: Instant Confirmation Ticket -->
+        <div class="wizard-step-content" id="wizardStep3" style="display:none;">
+          <div class="booking-pass">
+            <i class="fas fa-circle-check" style="font-size:3rem; color:#2ECC71;"></i>
+            <h3 style="font-size:1.6rem; margin-top:12px; color:var(--text-main);">Table Reserved Successfully!</h3>
+            <p style="color:var(--text-muted); font-size:0.9rem;">Show this digital pass code upon arrival at Papillon Veg Fine Dine.</p>
+            <div class="pass-code" id="passCodeDisplay">PAPILLON-0000</div>
+            <div id="passDetails" style="text-align:left; font-size:0.9rem; color:var(--text-main); margin-top:16px; background:rgba(0,0,0,0.3); padding:16px; border-radius:var(--radius-sm);">
+            </div>
+            <div style="margin-top:20px; display:flex; gap:12px; justify-content:center;">
+              <button class="btn btn-gold btn-sm" onclick="window.print()"><i class="fas fa-print"></i> Print / Save Pass</button>
+              <button class="btn btn-outline btn-sm" onclick="closeModal('bookingModal')">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

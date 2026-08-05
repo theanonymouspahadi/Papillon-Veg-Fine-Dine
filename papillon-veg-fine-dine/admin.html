@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Papillon Veg Fine Dine - Staff & Manager Portal</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+
+  <!-- Screen 1: PIN Authentication -->
+  <div class="auth-wrapper" id="authScreen">
+    <div class="auth-card">
+      <div class="auth-icon"><i class="fas fa-user-shield"></i></div>
+      <h2 style="font-size:1.6rem; margin-bottom:6px;">Staff & Manager Access</h2>
+      <p style="color:var(--admin-text-muted); font-size:0.88rem;">Enter your 4-digit security PIN to access management tools.</p>
+      
+      <div class="pin-input-group">
+        <input type="password" maxlength="1" class="pin-digit" autofocus>
+        <input type="password" maxlength="1" class="pin-digit">
+        <input type="password" maxlength="1" class="pin-digit">
+        <input type="password" maxlength="1" class="pin-digit">
+      </div>
+      <p style="font-size:0.8rem; color:var(--admin-gold-glow);">Default Security PIN: <strong>7890</strong></p>
+    </div>
+  </div>
+
+  <!-- Screen 2: Standalone Dashboard Portal -->
+  <div class="dashboard-layout" id="dashboardScreen" style="display:none;">
+    
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <div>
+        <div class="brand-header">
+          <div style="width:36px; height:36px; background:var(--admin-gold); border-radius:50%; display:flex; align-items:center; justify-content:center; color:#09130F; font-size:1.2rem;">
+            <i class="fas fa-utensils"></i>
+          </div>
+          <div>
+            <h3 style="font-size:1.1rem; color:var(--admin-text);">Papillon Admin</h3>
+            <p style="font-size:0.75rem; color:var(--admin-text-muted);">Manager Web Portal</p>
+          </div>
+        </div>
+
+        <ul class="sidebar-menu">
+          <li>
+            <a class="sidebar-link active" id="navLeadsBtn" onclick="switchAdminTab('leads')"><i class="fas fa-chart-line"></i> Reservations & Leads</a>
+          </li>
+          <li>
+            <a class="sidebar-link" id="navMenuBtn" onclick="switchAdminTab('menu')"><i class="fas fa-utensils"></i> Menu & Pricing Manager</a>
+          </li>
+          <li>
+            <a href="index.html" target="_blank" class="sidebar-link"><i class="fas fa-globe"></i> Customer Website <i class="fas fa-external-link-alt" style="font-size:0.75rem;"></i></a>
+          </li>
+        </ul>
+      </div>
+
+      <div style="border-top:1px solid var(--admin-border-subtle); padding-top:16px;">
+        <button class="btn-admin-outline" style="width:100%; text-align:center;" onclick="logout()"><i class="fas fa-right-from-bracket"></i> Lock Portal</button>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      
+      <!-- TAB 1: RESERVATIONS & LEADS -->
+      <div id="tabLeadsView">
+        <div class="top-navbar">
+          <div>
+            <h1 style="font-size:1.8rem; font-family:'Playfair Display', serif;">Reservation & Banquet Manager</h1>
+            <p style="font-size:0.88rem; color:var(--admin-text-muted);">Manage real-time customer table bookings, assign seating, and process banquet inquiries.</p>
+          </div>
+          <div style="display:flex; align-items:center; gap:16px;">
+            <div class="sync-status">
+              <div class="sync-dot"></div> API Live Sync Connected
+            </div>
+            <button class="btn-admin" onclick="exportCSV()"><i class="fas fa-file-csv"></i> Download CSV Report</button>
+          </div>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-icon-wrap"><i class="fas fa-calendar-day"></i></div>
+            <div class="stat-info">
+              <h4>Today's Bookings</h4>
+              <h2 id="statTodayTotal">0</h2>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon-wrap"><i class="fas fa-chair"></i></div>
+            <div class="stat-info">
+              <h4>Table Reservations</h4>
+              <h2 id="statTableRes">0</h2>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon-wrap"><i class="fas fa-glass-cheers"></i></div>
+            <div class="stat-info">
+              <h4>Banquet Inquiries</h4>
+              <h2 id="statBanquetInquiries">0</h2>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon-wrap"><i class="fas fa-utensils"></i></div>
+            <div class="stat-info">
+              <h4>Total Menu Dishes</h4>
+              <h2 id="statMenuItemsTotal">0</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="toolbar">
+          <div class="filter-pills">
+            <button class="pill-btn active" onclick="setFilter('all', this)">All Leads</button>
+            <button class="pill-btn" onclick="setFilter('table', this)">Table Reservations</button>
+            <button class="pill-btn" onclick="setFilter('banquet', this)">Banquet Inquiries</button>
+            <button class="pill-btn" onclick="setFilter('confirmed', this)">Confirmed</button>
+            <button class="pill-btn" onclick="setFilter('seated', this)">Seated</button>
+          </div>
+
+          <div class="search-box">
+            <i class="fas fa-search" style="color:var(--admin-text-muted);"></i>
+            <input type="text" id="searchInput" placeholder="Search by Name, Phone or ID..." onkeyup="renderLeadsTable()">
+          </div>
+        </div>
+
+        <div class="data-card">
+          <div class="table-wrap">
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th>Booking ID</th>
+                  <th>Type</th>
+                  <th>Customer Name</th>
+                  <th>Date & Time</th>
+                  <th>Party Size</th>
+                  <th>Seating Area</th>
+                  <th>Table Assigned</th>
+                  <th>Status</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="adminLeadsTbody">
+                <!-- Dynamic JS rendering -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 2: MENU & PRICING MANAGER -->
+      <div id="tabMenuView" style="display:none;">
+        <div class="top-navbar">
+          <div>
+            <h1 style="font-size:1.8rem; font-family:'Playfair Display', serif;">Menu & Pricing Manager</h1>
+            <p style="font-size:0.88rem; color:var(--admin-text-muted);">Add new dishes, update prices, remove items, and toggle dishes for "Today's Special".</p>
+          </div>
+          <button class="btn-admin" onclick="openAddDishModal()"><i class="fas fa-plus"></i> Add New Dish Item</button>
+        </div>
+
+        <div class="toolbar">
+          <div class="search-box" style="width:360px;">
+            <i class="fas fa-search" style="color:var(--admin-text-muted);"></i>
+            <input type="text" id="menuAdminSearch" placeholder="Search dish by name or category..." onkeyup="renderAdminMenuTable()">
+          </div>
+        </div>
+
+        <div class="data-card">
+          <div class="table-wrap">
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th>Dish Name</th>
+                  <th>Category</th>
+                  <th>Price</th>
+                  <th>Today's Special?</th>
+                  <th>Jain?</th>
+                  <th>Description</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="adminMenuTbody">
+                <!-- Dynamic JS rendering -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <!-- Modal 1: Edit Reservation & Table Assignment -->
+  <div class="modal-backdrop" id="editModal" style="display:none;">
+    <div class="modal-card">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px;">
+        <h3 style="font-size:1.4rem; color:var(--admin-gold-glow);"><i class="fas fa-sliders"></i> Manage Reservation Details</h3>
+        <button class="btn-icon" onclick="closeEditModal()" style="font-size:1.4rem;">&times;</button>
+      </div>
+
+      <div style="background:rgba(0,0,0,0.3); padding:12px; border-radius:var(--radius-sm); margin-bottom:16px;">
+        <p style="font-size:0.85rem; color:var(--admin-text-muted);">Booking Reference: <strong id="editLeadId" style="color:var(--admin-text);">PAPILLON-0000</strong></p>
+        <p style="font-size:0.95rem; color:var(--admin-text);" id="editCustomerName">Customer Name</p>
+      </div>
+
+      <div style="display:flex; flex-direction:column; gap:14px; margin-bottom:20px;">
+        <div>
+          <label style="display:block; font-size:0.8rem; color:var(--admin-gold); text-transform:uppercase; margin-bottom:6px;">Reservation Status</label>
+          <select id="editStatusSelect" style="width:100%; padding:10px; background:rgba(0,0,0,0.4); border:1px solid var(--admin-border-subtle); color:var(--admin-text); border-radius:var(--radius-sm); outline:none;">
+            <option value="Confirmed">Confirmed</option>
+            <option value="Seated">Seated / Arrived</option>
+            <option value="Inquiry Received">Inquiry Received</option>
+            <option value="Completed">Completed</option>
+            <option value="Cancelled">Cancelled</option>
+          </select>
+        </div>
+
+        <div>
+          <label style="display:block; font-size:0.8rem; color:var(--admin-gold); text-transform:uppercase; margin-bottom:6px;">Assign Floor Table / Section</label>
+          <select id="editTableSelect" style="width:100%; padding:10px; background:rgba(0,0,0,0.4); border:1px solid var(--admin-border-subtle); color:var(--admin-text); border-radius:var(--radius-sm); outline:none;">
+            <option value="Unassigned">Unassigned</option>
+            <option value="T-01 (Couple Booth)">T-01 (Couple Booth)</option>
+            <option value="T-02 (Couple Booth)">T-02 (Couple Booth)</option>
+            <option value="T-04 (Family Booth)">T-04 (Family Booth)</option>
+            <option value="T-06 (Family Table)">T-06 (Family Table)</option>
+            <option value="T-08 (Large Group)">T-08 (Large Group)</option>
+            <option value="Terrace T-01">Garden Terrace Table 01</option>
+            <option value="Terrace T-02">Garden Terrace Table 02</option>
+            <option value="Banquet Section A">Banquet Section A</option>
+            <option value="Banquet Section B">Banquet Section B</option>
+          </select>
+        </div>
+
+        <div>
+          <label style="display:block; font-size:0.8rem; color:var(--admin-gold); text-transform:uppercase; margin-bottom:6px;">Manager Internal Notes</label>
+          <textarea id="editNotesInput" rows="3" style="width:100%; padding:10px; background:rgba(0,0,0,0.4); border:1px solid var(--admin-border-subtle); color:var(--admin-text); border-radius:var(--radius-sm); outline:none; font-family:inherit;"></textarea>
+        </div>
+      </div>
+
+      <div style="display:flex; justify-content:flex-end; gap:12px;">
+        <button class="btn-admin-outline" onclick="closeEditModal()">Cancel</button>
+        <button class="btn-admin" onclick="saveLeadChanges()"><i class="fas fa-save"></i> Save Changes</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Add / Edit Dish Item Modal -->
+  <div class="modal-backdrop" id="dishModal" style="display:none;">
+    <div class="modal-card" style="max-width:560px;">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px;">
+        <h3 style="font-size:1.4rem; color:var(--admin-gold-glow);" id="dishModalTitle"><i class="fas fa-plus-circle"></i> Add New Menu Dish</h3>
+        <button class="btn-icon" onclick="closeDishModal()" style="font-size:1.4rem;">&times;</button>
+      </div>
+
+      <form id="dishForm" style="display:flex; flex-direction:column; gap:14px;">
+        <input type="hidden" id="dishFormId">
+        
+        <div>
+          <label style="display:block; font-size:0.8rem; color:var(--admin-gold); text-transform:uppercase; margin-bottom:4px;">Dish Name *</label>
+          <input type="text" id="dishFormName" placeholder="e.g. Royal Shahi Paneer" required style="width:100%; padding:10px; background:rgba(0,0,0,0.4); border:1px solid var(--admin-border-subtle); color:var(--admin-text); border-radius:var(--radius-sm); outline:none;">
+        </div>
+
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+          <div>
+            <label style="display:block; font-size:0.8rem; color:var(--admin-gold); text-transform:uppercase; margin-bottom:4px;">Category *</label>
+            <select id="dishFormCategory" required style="width:100%; padding:10px; background:rgba(0,0,0,0.4); border:1px solid var(--admin-border-subtle); color:var(--admin-text); border-radius:var(--radius-sm); outline:none;">
+              <option value="today-special">⭐ Today's Special</option>
+              <option value="starters">Royal Starters & Tandoor</option>
+              <option value="soups">Soups & Salads</option>
+              <option value="main-indian">North Indian Main Course</option>
+              <option value="breads">Artisanal Naans & Breads</option>
+              <option value="asian">Pan-Asian Specialties</option>
+              <option value="italian">Italian & Pizzas</option>
+              <option value="sizzlers">Signature Sizzlers</option>
+              <option value="mocktails">Zero-Alcohol Mocktail Bar</option>
+              <option value="desserts">Royal Sweets & Desserts</option>
+            </select>
+          </div>
+
+          <div>
+            <label style="display:block; font-size:0.8rem; color:var(--admin-gold); text-transform:uppercase; margin-bottom:4px;">Price (INR) *</label>
+            <input type="text" id="dishFormPrice" placeholder="e.g. ₹450" required style="width:100%; padding:10px; background:rgba(0,0,0,0.4); border:1px solid var(--admin-border-subtle); color:var(--admin-text); border-radius:var(--radius-sm); outline:none;">
+          </div>
+        </div>
+
+        <div>
+          <label style="display:block; font-size:0.8rem; color:var(--admin-gold); text-transform:uppercase; margin-bottom:4px;">Description</label>
+          <textarea id="dishFormDesc" rows="2" placeholder="Brief ingredients description..." style="width:100%; padding:10px; background:rgba(0,0,0,0.4); border:1px solid var(--admin-border-subtle); color:var(--admin-text); border-radius:var(--radius-sm); outline:none; font-family:inherit;"></textarea>
+        </div>
+
+        <div style="display:flex; gap:20px; align-items:center; background:rgba(0,0,0,0.2); padding:10px; border-radius:var(--radius-sm);">
+          <label style="display:flex; align-items:center; gap:8px; cursor:pointer; font-size:0.88rem;">
+            <input type="checkbox" id="dishFormJain"> 🌿 Jain Friendly (No Onion/Garlic)
+          </label>
+          <label style="display:flex; align-items:center; gap:8px; cursor:pointer; font-size:0.88rem;">
+            <input type="checkbox" id="dishFormSpecial"> ⭐ Featured in Today's Special
+          </label>
+        </div>
+
+        <div style="display:flex; justify-content:flex-end; gap:12px; margin-top:10px;">
+          <button type="button" class="btn-admin-outline" onclick="closeDishModal()">Cancel</button>
+          <button type="submit" class="btn-admin"><i class="fas fa-save"></i> Save Dish</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/admin.js"></script>
+</body>
+</html>

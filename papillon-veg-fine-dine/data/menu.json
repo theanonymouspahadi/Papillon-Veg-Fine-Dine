@@ -1,0 +1,1405 @@
+[
+  {
+    "id": "item-101",
+    "name": "Dal Papillon Royal",
+    "category": "today-special",
+    "price": "₹425",
+    "desc": "Our signature black lentils slow-cooked overnight with smoked tomatoes, white butter, and saffron cream.",
+    "tags": [
+      "Chef Special",
+      "Jain Option"
+    ],
+    "spice": 1,
+    "isJain": true,
+    "isPopular": true,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-102",
+    "name": "Tandoori Malai Paneer Pasanda",
+    "category": "today-special",
+    "price": "₹495",
+    "desc": "Stuffed cottage cheese rounds glazed with cardamom cream and pistachios, roasted in charcoal tandoor.",
+    "tags": [
+      "Chef Special",
+      "Rich"
+    ],
+    "spice": 1,
+    "isJain": true,
+    "isPopular": true,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-103",
+    "name": "Papillon Sizzling Feast",
+    "category": "today-special",
+    "price": "₹595",
+    "desc": "Steaming iron plate featuring grilled herb paneer, buttered rice, roasted veggies, fries, and pepper sauce.",
+    "tags": [
+      "Sizzler",
+      "Popular"
+    ],
+    "spice": 2,
+    "isJain": false,
+    "isPopular": true,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-104",
+    "name": "Spiced Passionfruit & Basil Sparkler",
+    "category": "today-special",
+    "price": "₹265",
+    "desc": "Fresh passionfruit pulp crushed with sweet basil, lime juice, sparkling soda, and roasted cumin.",
+    "tags": [
+      "100% Alcohol-Free"
+    ],
+    "spice": 0,
+    "isJain": true,
+    "isPopular": true,
+    "image": "assets/images/mocktail.png"
+  },
+  {
+    "id": "item-105",
+    "name": "Truffle Mushroom & Cheese Fondue",
+    "category": "today-special",
+    "price": "₹540",
+    "desc": "Creamy Gruyere-style veg cheese fondue infused with wild mushroom essence.",
+    "tags": [
+      "Gourmet"
+    ],
+    "spice": 0,
+    "isJain": false,
+    "isPopular": true,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-106",
+    "name": "Wood-Fired Pesto & Sundried Pizza",
+    "category": "today-special",
+    "price": "₹510",
+    "desc": "Artisanal hand-stretched sourdough crust with basil pesto, bocconcini cheese, and pine nuts.",
+    "tags": [
+      "Wood-Fired"
+    ],
+    "spice": 0,
+    "isJain": true,
+    "isPopular": true,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-107",
+    "name": "Pan-Asian Crystal Dim Sum Platter",
+    "category": "today-special",
+    "price": "₹465",
+    "desc": "Translucent steamed dumplings stuffed with water chestnuts, lotus root, and edamame.",
+    "tags": [
+      "Vegan"
+    ],
+    "spice": 1,
+    "isJain": true,
+    "isPopular": true,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-108",
+    "name": "Lotus Stem & Sesame Pepper Crunch",
+    "category": "today-special",
+    "price": "₹420",
+    "desc": "Thinly sliced lotus root tossed in honey pepper glaze with toasted sesame seeds.",
+    "tags": [
+      "Crispy"
+    ],
+    "spice": 2,
+    "isJain": false,
+    "isPopular": true,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-109",
+    "name": "Shahi Kesar & Pistachio Rasmalai",
+    "category": "today-special",
+    "price": "₹295",
+    "desc": "Soft cottage cheese dumplings soaked in saffron milk, garnished with silver leaf.",
+    "tags": [
+      "Dessert"
+    ],
+    "spice": 0,
+    "isJain": true,
+    "isPopular": true,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-110",
+    "name": "Royal Guava & Chili Bloom",
+    "category": "today-special",
+    "price": "₹245",
+    "desc": "Pink guava juice rimmed with Himalayan pink salt and red chili, served ice-cold.",
+    "tags": [
+      "Mocktail"
+    ],
+    "spice": 1,
+    "isJain": true,
+    "isPopular": true,
+    "image": "assets/images/mocktail.png"
+  },
+  {
+    "id": "item-201",
+    "name": "Angaari Paneer Tikka",
+    "category": "starters",
+    "price": "₹465",
+    "desc": "Spiced paneer cubes marinated in smoked red chili & mustard oil, roasted in clay oven.",
+    "tags": [
+      "Spicy"
+    ],
+    "spice": 3,
+    "isJain": false,
+    "isPopular": true,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-202",
+    "name": "Dahi Ke Kebab",
+    "category": "starters",
+    "price": "₹425",
+    "desc": "Velvety hung curd patties infused with saffron, coriander, and crushed pepper with mint relish.",
+    "tags": [
+      "Chef Special"
+    ],
+    "spice": 1,
+    "isJain": false,
+    "isPopular": true,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-203",
+    "name": "Hara Bhara Cheese Kebab",
+    "category": "starters",
+    "price": "₹395",
+    "desc": "Crispy spinach & green pea patties filled with molten mozzarella cheese.",
+    "tags": [
+      "Kid Favorite"
+    ],
+    "spice": 1,
+    "isJain": true,
+    "isPopular": false,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-204",
+    "name": "Stuffed Tandoori Mushroom",
+    "category": "starters",
+    "price": "₹440",
+    "desc": "Button mushrooms stuffed with spiced cheese & herbs, roasted in tandoor.",
+    "tags": [
+      "Gluten Free"
+    ],
+    "spice": 2,
+    "isJain": false,
+    "isPopular": false,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-205",
+    "name": "Malai Broccoli & Cashew Roast",
+    "category": "starters",
+    "price": "₹450",
+    "desc": "Tender broccoli florets steeped in cream, cardamom, and roasted cashew paste.",
+    "tags": [
+      "Mild & Rich"
+    ],
+    "spice": 0,
+    "isJain": true,
+    "isPopular": false,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-206",
+    "name": "Paneer Hariyali Kebab",
+    "category": "starters",
+    "price": "₹460",
+    "desc": "Cottage cheese marinated in fresh mint, coriander, spinach, and green chili paste.",
+    "tags": [
+      "Herb Roasted"
+    ],
+    "spice": 2,
+    "isJain": false,
+    "isPopular": false,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-207",
+    "name": "Veg Seekh Kebab Shahi",
+    "category": "starters",
+    "price": "₹390",
+    "desc": "Minced vegetable and dry-fruit skewers roasted over live coal embers.",
+    "tags": [
+      "Traditional"
+    ],
+    "spice": 2,
+    "isJain": false,
+    "isPopular": false,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-208",
+    "name": "Crispy Corn Basket",
+    "category": "starters",
+    "price": "₹360",
+    "desc": "Sweet corn kernels tossed with chili garlic, lime, and crushed kaffir lime.",
+    "tags": [
+      "Crispy"
+    ],
+    "spice": 2,
+    "isJain": false,
+    "isPopular": false,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-209",
+    "name": "Subz Potli Samosa",
+    "category": "starters",
+    "price": "₹340",
+    "desc": "Mini money-bag samosas filled with spiced green peas, cashew, and paneer.",
+    "tags": [
+      "Starter"
+    ],
+    "spice": 1,
+    "isJain": true,
+    "isPopular": false,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-210",
+    "name": "Achari Paneer Shashlik",
+    "category": "starters",
+    "price": "₹470",
+    "desc": "Pickle-spiced paneer skewers with diced bell peppers and yellow onions.",
+    "tags": [
+      "Tangy"
+    ],
+    "spice": 3,
+    "isJain": false,
+    "isPopular": false,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-301",
+    "name": "Cream of Wild Mushroom Soup",
+    "category": "soups",
+    "price": "₹295",
+    "desc": "Rich roasted mushroom velouté drizzled with truffle oil and served with garlic crostini.",
+    "tags": [
+      "Chef Special"
+    ],
+    "spice": 0,
+    "isJain": false,
+    "isPopular": true,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-302",
+    "name": "Roasted Tomato Basil Shorba",
+    "category": "soups",
+    "price": "₹265",
+    "desc": "Slow-roasted Indian tomato soup tempered with cumin, garlic, and fresh basil leaves.",
+    "tags": [
+      "Jain Special"
+    ],
+    "spice": 1,
+    "isJain": true,
+    "isPopular": true,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-303",
+    "name": "Burmese Khow Suey Soup",
+    "category": "soups",
+    "price": "₹340",
+    "desc": "Coconut curry broth served with noodles, fried garlic, chili flakes, and fresh cilantro.",
+    "tags": [
+      "Asian"
+    ],
+    "spice": 2,
+    "isJain": false,
+    "isPopular": false,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-304",
+    "name": "Sweet Corn Veg Supreme",
+    "category": "soups",
+    "price": "₹240",
+    "desc": "Creamy sweet corn soup studded with finely diced carrots and beans.",
+    "tags": [
+      "Comfort"
+    ],
+    "spice": 0,
+    "isJain": true,
+    "isPopular": false,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-305",
+    "name": "Hot & Sour Vegetable Broth",
+    "category": "soups",
+    "price": "₹250",
+    "desc": "Spicy dark broth infused with bamboo shoots, wood ear mushrooms, and vinegar.",
+    "tags": [
+      "Tangy"
+    ],
+    "spice": 3,
+    "isJain": false,
+    "isPopular": false,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-306",
+    "name": "Lemon Coriander Clear Soup",
+    "category": "soups",
+    "price": "₹240",
+    "desc": "Light citrus-infused clear vegetable broth garnished with fresh coriander.",
+    "tags": [
+      "Healthy"
+    ],
+    "spice": 1,
+    "isJain": true,
+    "isPopular": false,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-307",
+    "name": "Manchow Soup with Crispy Noodles",
+    "category": "soups",
+    "price": "₹255",
+    "desc": "Indo-Chinese garlic soy soup topped with crunchy fried noodles.",
+    "tags": [
+      "Popular"
+    ],
+    "spice": 2,
+    "isJain": false,
+    "isPopular": true,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-308",
+    "name": "Broccoli Almond Velouté",
+    "category": "soups",
+    "price": "₹310",
+    "desc": "Silky broccoli soup thickened with toasted almond milk and nutmeg.",
+    "tags": [
+      "Gourmet"
+    ],
+    "spice": 0,
+    "isJain": true,
+    "isPopular": false,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-309",
+    "name": "Minestrone Soup with Parmesan",
+    "category": "soups",
+    "price": "₹285",
+    "desc": "Classic Italian tomato broth with ditalini pasta, kidney beans, and zucchini.",
+    "tags": [
+      "Italian"
+    ],
+    "spice": 1,
+    "isJain": false,
+    "isPopular": false,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-310",
+    "name": "Thai Coconut Tom Yum",
+    "category": "soups",
+    "price": "₹320",
+    "desc": "Fragrant lemongrass, galangal, kaffir lime, and chili in coconut milk broth.",
+    "tags": [
+      "Authentic"
+    ],
+    "spice": 3,
+    "isJain": false,
+    "isPopular": false,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-401",
+    "name": "Paneer Butter Masala",
+    "category": "main-indian",
+    "price": "₹465",
+    "desc": "Cottage cheese cubes cooked in a velvety tomato, butter, and cashew gravy.",
+    "tags": [
+      "Classic"
+    ],
+    "spice": 1,
+    "isJain": true,
+    "isPopular": true,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-402",
+    "name": "Kaju Khoya Shahi Handi",
+    "category": "main-indian",
+    "price": "₹495",
+    "desc": "Whole cashews and mawa dumplings simmered in a rich golden saffron gravy.",
+    "tags": [
+      "Rich"
+    ],
+    "spice": 0,
+    "isJain": true,
+    "isPopular": false,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-403",
+    "name": "Subz Diwani Handi",
+    "category": "main-indian",
+    "price": "₹410",
+    "desc": "Seasonal garden vegetables cooked in a spinach and cashew-based green curry.",
+    "tags": [
+      "Healthy"
+    ],
+    "spice": 2,
+    "isJain": false,
+    "isPopular": false,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-404",
+    "name": "Paneer Lababdar",
+    "category": "main-indian",
+    "price": "₹475",
+    "desc": "Grated paneer and cottage cheese blocks tossed with bell peppers in onion tomato gravy.",
+    "tags": [
+      "Popular"
+    ],
+    "spice": 2,
+    "isJain": false,
+    "isPopular": true,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-405",
+    "name": "Dum Aloo Kashmiri",
+    "category": "main-indian",
+    "price": "₹430",
+    "desc": "Scooped potatoes stuffed with dry fruits, simmered in fennel and yogurt gravy.",
+    "tags": [
+      "Traditional"
+    ],
+    "spice": 1,
+    "isJain": false,
+    "isPopular": false,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-406",
+    "name": "Paneer Tikka Masala",
+    "category": "main-indian",
+    "price": "₹480",
+    "desc": "Charcoal grilled paneer tikka tossed in a spicy kadai gravy.",
+    "tags": [
+      "Spicy"
+    ],
+    "spice": 3,
+    "isJain": false,
+    "isPopular": true,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-407",
+    "name": "Palak Paneer Royal",
+    "category": "main-indian",
+    "price": "₹440",
+    "desc": "Fresh spinach puree tempered with garlic and white butter with soft paneer.",
+    "tags": [
+      "Classic"
+    ],
+    "spice": 1,
+    "isJain": false,
+    "isPopular": false,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-408",
+    "name": "Malai Kofta Golden Gravy",
+    "category": "main-indian",
+    "price": "₹470",
+    "desc": "Melt-in-mouth cottage cheese & potato dumplings in rich onion-free cashew curry.",
+    "tags": [
+      "Jain Special"
+    ],
+    "spice": 0,
+    "isJain": true,
+    "isPopular": true,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-409",
+    "name": "Bhindi Masala Jaipuri",
+    "category": "main-indian",
+    "price": "₹380",
+    "desc": "Crispy fried okra tossed with raw mango powder and roasted spices.",
+    "tags": [
+      "Crispy"
+    ],
+    "spice": 2,
+    "isJain": true,
+    "isPopular": false,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-410",
+    "name": "Methi Chaman Kashmiri",
+    "category": "main-indian",
+    "price": "₹450",
+    "desc": "Fresh fenugreek leaves and paneer cubes in aromatic cardamom gravy.",
+    "tags": [
+      "Chef Special"
+    ],
+    "spice": 1,
+    "isJain": true,
+    "isPopular": false,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-501",
+    "name": "Butter Garlic Naan",
+    "category": "breads",
+    "price": "₹95",
+    "desc": "Leavened flatbread brushed with fresh garlic and melted butter.",
+    "tags": [
+      "Bestseller"
+    ],
+    "spice": 0,
+    "isJain": false,
+    "isPopular": true,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-502",
+    "name": "Cheese Chili Garlic Naan",
+    "category": "breads",
+    "price": "₹125",
+    "desc": "Naan stuffed with processed cheese, chopped green chilies, and herbs.",
+    "tags": [
+      "Chef Special"
+    ],
+    "spice": 2,
+    "isJain": false,
+    "isPopular": true,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-503",
+    "name": "Chur Chur Naan Platter",
+    "category": "breads",
+    "price": "₹140",
+    "desc": "Flaky crushed naan stuffed with spiced potato and paneer, served with chole gravy.",
+    "tags": [
+      "Popular"
+    ],
+    "spice": 2,
+    "isJain": false,
+    "isPopular": false,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-504",
+    "name": "Butter Tandoori Roti",
+    "category": "breads",
+    "price": "₹45",
+    "desc": "Whole wheat bread baked in clay tandoor and brushed with cow ghee.",
+    "tags": [
+      "Healthy"
+    ],
+    "spice": 0,
+    "isJain": true,
+    "isPopular": true,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-505",
+    "name": "Missi Roti Punjabi",
+    "category": "breads",
+    "price": "₹60",
+    "desc": "Gram flour and wheat bread flavored with carom seeds and dried pomegranate.",
+    "tags": [
+      "Traditional"
+    ],
+    "spice": 1,
+    "isJain": true,
+    "isPopular": false,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-506",
+    "name": "Laccha Paratha Pudina",
+    "category": "breads",
+    "price": "₹75",
+    "desc": "Multi-layered refined flour paratha sprinkled with dried mint powder.",
+    "tags": [
+      "Layered"
+    ],
+    "spice": 0,
+    "isJain": true,
+    "isPopular": false,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-507",
+    "name": "Stuffed Paneer Kulcha",
+    "category": "breads",
+    "price": "₹110",
+    "desc": "Amritsari style kulcha stuffed with cottage cheese and coriander.",
+    "tags": [
+      "Stuffed"
+    ],
+    "spice": 2,
+    "isJain": false,
+    "isPopular": false,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-508",
+    "name": "Hyderabadi Dum Veg Biryani",
+    "category": "breads",
+    "price": "₹440",
+    "desc": "Aromatic basmati rice layered with vegetables, saffron milk, and fried onions.",
+    "tags": [
+      "Biryani"
+    ],
+    "spice": 2,
+    "isJain": false,
+    "isPopular": true,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-509",
+    "name": "Jeera Rice & Dal Tadka Combo",
+    "category": "breads",
+    "price": "₹360",
+    "desc": "Cumin rice served with yellow lentil tadka cooked in desi ghee.",
+    "tags": [
+      "Comfort"
+    ],
+    "spice": 1,
+    "isJain": true,
+    "isPopular": false,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-510",
+    "name": "Kashmiri Saffron Pulao",
+    "category": "breads",
+    "price": "₹390",
+    "desc": "Sweet fragrant basmati rice cooked with saffron, dry fruits, and fresh pomegranate.",
+    "tags": [
+      "Rich"
+    ],
+    "spice": 0,
+    "isJain": true,
+    "isPopular": false,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-601",
+    "name": "Pan-Asian Crystal Dim Sum",
+    "category": "asian",
+    "price": "₹465",
+    "desc": "Translucent steamed dumplings stuffed with water chestnuts and lotus root.",
+    "tags": [
+      "Vegan"
+    ],
+    "spice": 1,
+    "isJain": true,
+    "isPopular": true,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-602",
+    "name": "Lotus Stem & Sesame Pepper",
+    "category": "asian",
+    "price": "₹420",
+    "desc": "Thinly sliced lotus root tossed in honey pepper glaze with toasted sesame seeds.",
+    "tags": [
+      "Crispy"
+    ],
+    "spice": 2,
+    "isJain": false,
+    "isPopular": true,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-603",
+    "name": "Thai Green Curry with Jasmine Rice",
+    "category": "asian",
+    "price": "₹495",
+    "desc": "Aromatic coconut green curry with bamboo shoots and Thai eggplant.",
+    "tags": [
+      "Authentic"
+    ],
+    "spice": 2,
+    "isJain": false,
+    "isPopular": true,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-604",
+    "name": "Schezwan Cottage Cheese Wok",
+    "category": "asian",
+    "price": "₹440",
+    "desc": "Wok-tossed paneer cubes in fiery red pepper Schezwan sauce.",
+    "tags": [
+      "Spicy"
+    ],
+    "spice": 3,
+    "isJain": false,
+    "isPopular": false,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-605",
+    "name": "Edamame & Truffle Fried Rice",
+    "category": "asian",
+    "price": "₹420",
+    "desc": "Jasmine rice fried with fresh edamame pods and black truffle oil.",
+    "tags": [
+      "Gourmet"
+    ],
+    "spice": 1,
+    "isJain": true,
+    "isPopular": false,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-606",
+    "name": "Singapore Chili Rice Noodle",
+    "category": "asian",
+    "price": "₹395",
+    "desc": "Thin rice vermicelli tossed with curry powder, bell peppers, and bean sprouts.",
+    "tags": [
+      "Noodles"
+    ],
+    "spice": 2,
+    "isJain": false,
+    "isPopular": false,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-607",
+    "name": "Crispy Honey Chili Potato",
+    "category": "asian",
+    "price": "₹350",
+    "desc": "Golden fried potato fingers coated in sticky sesame honey chili sauce.",
+    "tags": [
+      "Bestseller"
+    ],
+    "spice": 2,
+    "isJain": false,
+    "isPopular": true,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-608",
+    "name": "Veg Manchurian Gravy Bowl",
+    "category": "asian",
+    "price": "₹380",
+    "desc": "Deep-fried vegetable balls in rich garlic cilantro soy sauce.",
+    "tags": [
+      "Classic"
+    ],
+    "spice": 2,
+    "isJain": false,
+    "isPopular": false,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-609",
+    "name": "Kung Pao Tofu & Peanuts",
+    "category": "asian",
+    "price": "₹410",
+    "desc": "Crispy tofu blocks wok-tossed with Sichuan peppers, zucchini, and roasted peanuts.",
+    "tags": [
+      "Vegan"
+    ],
+    "spice": 3,
+    "isJain": false,
+    "isPopular": false,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-610",
+    "name": "Wok Tossed Hakka Noodles",
+    "category": "asian",
+    "price": "₹360",
+    "desc": "Classic stir-fried wheat noodles with shredded cabbage, capsicum, and spring onion.",
+    "tags": [
+      "Favorite"
+    ],
+    "spice": 1,
+    "isJain": false,
+    "isPopular": false,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-701",
+    "name": "Wood-Fired Pesto & Sundried Pizza",
+    "category": "italian",
+    "price": "₹510",
+    "desc": "Artisanal sourdough crust with basil pesto, bocconcini cheese, and pine nuts.",
+    "tags": [
+      "Wood-Fired"
+    ],
+    "spice": 0,
+    "isJain": true,
+    "isPopular": true,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-702",
+    "name": "Truffle Mushroom & Cheese Fondue",
+    "category": "italian",
+    "price": "₹540",
+    "desc": "Creamy Gruyere-style veg cheese fondue infused with wild mushroom essence.",
+    "tags": [
+      "Gourmet"
+    ],
+    "spice": 0,
+    "isJain": false,
+    "isPopular": true,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-703",
+    "name": "Wild Mushroom & Asparagus Risotto",
+    "category": "italian",
+    "price": "₹490",
+    "desc": "Creamy Arborio rice cooked with porcini broth and grilled asparagus.",
+    "tags": [
+      "Risotto"
+    ],
+    "spice": 0,
+    "isJain": false,
+    "isPopular": false,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-704",
+    "name": "Margherita Classica Pizza",
+    "category": "italian",
+    "price": "₹440",
+    "desc": "San Marzano tomato sauce, fresh mozzarella cheese, and sweet basil leaves.",
+    "tags": [
+      "Classic"
+    ],
+    "spice": 0,
+    "isJain": true,
+    "isPopular": true,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-705",
+    "name": "Quattro Formaggi 4-Cheese Pizza",
+    "category": "italian",
+    "price": "₹530",
+    "desc": "Four cheese blend of mozzarella, cheddar, gouda, and ricotta with chili honey drizzle.",
+    "tags": [
+      "Cheesy"
+    ],
+    "spice": 1,
+    "isJain": true,
+    "isPopular": false,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-706",
+    "name": "Penne Alfredo Creamy Sauce",
+    "category": "italian",
+    "price": "₹465",
+    "desc": "Penne pasta tossed in rich parmesan butter cream with broccoli florets.",
+    "tags": [
+      "Creamy"
+    ],
+    "spice": 0,
+    "isJain": true,
+    "isPopular": true,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-707",
+    "name": "Arrabbiata Spicy Tomato Pasta",
+    "category": "italian",
+    "price": "₹445",
+    "desc": "Penne pasta in fiery red tomato sauce with black olives and chili flakes.",
+    "tags": [
+      "Spicy"
+    ],
+    "spice": 3,
+    "isJain": true,
+    "isPopular": false,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-708",
+    "name": "Baked Spinach & Cheese Lasagna",
+    "category": "italian",
+    "price": "₹520",
+    "desc": "Layered pasta sheets with creamy spinach, ricotta, and golden mozzarella crust.",
+    "tags": [
+      "Baked"
+    ],
+    "spice": 0,
+    "isJain": false,
+    "isPopular": false,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-709",
+    "name": "Garlic Bread Supreme with Cheese",
+    "category": "italian",
+    "price": "₹280",
+    "desc": "Toasted baguette slices with herbs, garlic butter, and melted cheese.",
+    "tags": [
+      "Starter"
+    ],
+    "spice": 0,
+    "isJain": false,
+    "isPopular": true,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-710",
+    "name": "Ravioli Ricotta & Herb Dumplings",
+    "category": "italian",
+    "price": "₹495",
+    "desc": "Handmade pasta pockets filled with ricotta cheese, tossed in sage butter.",
+    "tags": [
+      "Artisanal"
+    ],
+    "spice": 0,
+    "isJain": false,
+    "isPopular": false,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-801",
+    "name": "Papillon Special Veg Sizzler",
+    "category": "sizzlers",
+    "price": "₹595",
+    "desc": "Steaming iron plate featuring grilled herb paneer, buttered rice, roasted veggies, fries, and pepper sauce.",
+    "tags": [
+      "Chef Special"
+    ],
+    "spice": 2,
+    "isJain": false,
+    "isPopular": true,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-802",
+    "name": "Sizzling Mexican Fajita Platter",
+    "category": "sizzlers",
+    "price": "₹575",
+    "desc": "Mexican spiced veggies, cottage cheese, rice, nachos, refried beans, and salsa sauce.",
+    "tags": [
+      "Mexican"
+    ],
+    "spice": 3,
+    "isJain": false,
+    "isPopular": false,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-803",
+    "name": "Paneer Shashlik Sizzler in Pepper",
+    "category": "sizzlers",
+    "price": "₹610",
+    "desc": "Charcoal grilled paneer skewers served over a bed of hakka noodles and black pepper gravy.",
+    "tags": [
+      "Popular"
+    ],
+    "spice": 2,
+    "isJain": false,
+    "isPopular": true,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-804",
+    "name": "Sizzling Chinese Manchurian Rice",
+    "category": "sizzlers",
+    "price": "₹560",
+    "desc": "Schezwan fried rice, crisp manchurian balls, french fries, and sizzling garlic gravy.",
+    "tags": [
+      "Indo-Chinese"
+    ],
+    "spice": 2,
+    "isJain": false,
+    "isPopular": false,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-805",
+    "name": "Italian Pasta Sizzler",
+    "category": "sizzlers",
+    "price": "₹580",
+    "desc": "Creamy penne alfredo, cheesy garlic bread, grilled zucchini, and potato wedges sizzling on iron plate.",
+    "tags": [
+      "Italian"
+    ],
+    "spice": 0,
+    "isJain": false,
+    "isPopular": false,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-806",
+    "name": "Tandoori Kebabs Mix Sizzler",
+    "category": "sizzlers",
+    "price": "₹640",
+    "desc": "Assorted paneer tikka, dahi kebab, seekh kebab, and laccha paratha on sizzler plate.",
+    "tags": [
+      "Royal Mix"
+    ],
+    "spice": 2,
+    "isJain": false,
+    "isPopular": true,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-807",
+    "name": "Grilled Mushroom & Rice Sizzler",
+    "category": "sizzlers",
+    "price": "₹570",
+    "desc": "Garlic butter mushrooms, herb rice, sautéed veggies, and creamy mushroom sauce.",
+    "tags": [
+      "Gourmet"
+    ],
+    "spice": 1,
+    "isJain": false,
+    "isPopular": false,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-808",
+    "name": "Sizzling Brownie with Vanilla Gelato",
+    "category": "sizzlers",
+    "price": "₹380",
+    "desc": "Fudgy walnut brownie sizzling on hot cast iron with dark chocolate fudge and vanilla gelato.",
+    "tags": [
+      "Dessert Sizzler"
+    ],
+    "spice": 0,
+    "isJain": true,
+    "isPopular": true,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-809",
+    "name": "Cottage Cheese Steak Sizzler",
+    "category": "sizzlers",
+    "price": "₹595",
+    "desc": "Grilled paneer steak marinated in herbs, served with mashed potatoes and red wine sauce.",
+    "tags": [
+      "Steak"
+    ],
+    "spice": 1,
+    "isJain": false,
+    "isPopular": false,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-810",
+    "name": "Tex-Mex BBQ Veg Sizzler",
+    "category": "sizzlers",
+    "price": "₹585",
+    "desc": "Smoky BBQ glazed cottage cheese, grilled corn on cob, potato wedges, and rice.",
+    "tags": [
+      "BBQ"
+    ],
+    "spice": 2,
+    "isJain": false,
+    "isPopular": false,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-901",
+    "name": "Spiced Passionfruit & Basil Sparkler",
+    "category": "mocktails",
+    "price": "₹265",
+    "desc": "Fresh passionfruit pulp crushed with sweet basil, lime juice, sparkling soda, and roasted cumin.",
+    "tags": [
+      "100% Alcohol-Free"
+    ],
+    "spice": 0,
+    "isJain": true,
+    "isPopular": true,
+    "image": "assets/images/mocktail.png"
+  },
+  {
+    "id": "item-902",
+    "name": "Royal Guava & Chili Bloom",
+    "category": "mocktails",
+    "price": "₹245",
+    "desc": "Pink guava juice rimmed with Himalayan pink salt and red chili, served ice-cold.",
+    "tags": [
+      "Signature"
+    ],
+    "spice": 1,
+    "isJain": true,
+    "isPopular": true,
+    "image": "assets/images/mocktail.png"
+  },
+  {
+    "id": "item-903",
+    "name": "Green Apple & Mint Mojito Fizz",
+    "category": "mocktails",
+    "price": "₹230",
+    "desc": "Crisp green apple syrup, crushed mint, lime wedges, and sparkling soda.",
+    "tags": [
+      "Refreshing"
+    ],
+    "spice": 0,
+    "isJain": true,
+    "isPopular": false,
+    "image": "assets/images/mocktail.png"
+  },
+  {
+    "id": "item-904",
+    "name": "Mango Passionfruit Cooler",
+    "category": "mocktails",
+    "price": "₹250",
+    "desc": "Alphonso mango nectar blended with passionfruit pulp and crushed ice.",
+    "tags": [
+      "Fruity"
+    ],
+    "spice": 0,
+    "isJain": true,
+    "isPopular": true,
+    "image": "assets/images/mocktail.png"
+  },
+  {
+    "id": "item-905",
+    "name": "Blue Lagoon Citrus Spritzer",
+    "category": "mocktails",
+    "price": "₹220",
+    "desc": "Vibrant blue curaçao syrup shaken with lemonade and sprite.",
+    "tags": [
+      "Popular"
+    ],
+    "spice": 0,
+    "isJain": true,
+    "isPopular": false,
+    "image": "assets/images/mocktail.png"
+  },
+  {
+    "id": "item-906",
+    "name": "Pina Colada Virgin Blend",
+    "category": "mocktails",
+    "price": "₹260",
+    "desc": "Creamy coconut milk and fresh pineapple juice shaken with crushed ice.",
+    "tags": [
+      "Creamy"
+    ],
+    "spice": 0,
+    "isJain": true,
+    "isPopular": false,
+    "image": "assets/images/mocktail.png"
+  },
+  {
+    "id": "item-907",
+    "name": "Watermelon Basil Chill",
+    "category": "mocktails",
+    "price": "₹235",
+    "desc": "Fresh pressed watermelon juice muddled with sweet Thai basil leaves.",
+    "tags": [
+      "Fresh"
+    ],
+    "spice": 0,
+    "isJain": true,
+    "isPopular": false,
+    "image": "assets/images/mocktail.png"
+  },
+  {
+    "id": "item-908",
+    "name": "Spiced Jamun & Pink Salt Shot",
+    "category": "mocktails",
+    "price": "₹210",
+    "desc": "Black plum juice blended with black salt, cumin, and lemon juice.",
+    "tags": [
+      "Tangy"
+    ],
+    "spice": 1,
+    "isJain": true,
+    "isPopular": false,
+    "image": "assets/images/mocktail.png"
+  },
+  {
+    "id": "item-909",
+    "name": "Dry Fruit Royal Thandai Shake",
+    "category": "mocktails",
+    "price": "₹290",
+    "desc": "Rich milk shake with crushed almonds, pistachios, saffron, and rose petals.",
+    "tags": [
+      "Royal"
+    ],
+    "spice": 0,
+    "isJain": true,
+    "isPopular": true,
+    "image": "assets/images/mocktail.png"
+  },
+  {
+    "id": "item-910",
+    "name": "Cold Brew Iced Peach Tea",
+    "category": "mocktails",
+    "price": "₹220",
+    "desc": "Artisanal black tea brewed cold with white peach extract and fresh mint.",
+    "tags": [
+      "Iced Tea"
+    ],
+    "spice": 0,
+    "isJain": true,
+    "isPopular": false,
+    "image": "assets/images/mocktail.png"
+  },
+  {
+    "id": "item-1001",
+    "name": "Shahi Kesar & Pistachio Rasmalai",
+    "category": "desserts",
+    "price": "₹295",
+    "desc": "Soft cottage cheese dumplings soaked in saffron milk, garnished with silver leaf.",
+    "tags": [
+      "Traditional"
+    ],
+    "spice": 0,
+    "isJain": true,
+    "isPopular": true,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-1002",
+    "name": "Molten Lava Cake with Gelato",
+    "category": "desserts",
+    "price": "₹340",
+    "desc": "Warm chocolate cake with oozing dark chocolate center, paired with vanilla gelato.",
+    "tags": [
+      "Kid Favorite"
+    ],
+    "spice": 0,
+    "isJain": true,
+    "isPopular": true,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-1003",
+    "name": "Gulab Jamun with Rabdi",
+    "category": "desserts",
+    "price": "₹240",
+    "desc": "Warm khoya gulab jamuns served over chilled rich rabdi.",
+    "tags": [
+      "Classic"
+    ],
+    "spice": 0,
+    "isJain": true,
+    "isPopular": false,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-1004",
+    "name": "Sizzling Chocolate Brownie",
+    "category": "desserts",
+    "price": "₹310",
+    "desc": "Warm brownie on hot sizzler plate with chocolate syrup and vanilla ice cream.",
+    "tags": [
+      "Popular"
+    ],
+    "spice": 0,
+    "isJain": true,
+    "isPopular": true,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-1005",
+    "name": "Artisanal Mango Gelato Scoop",
+    "category": "desserts",
+    "price": "₹195",
+    "desc": "Handcrafted eggless gelato made from real Alphonso mangoes.",
+    "tags": [
+      "Gelato"
+    ],
+    "spice": 0,
+    "isJain": true,
+    "isPopular": false,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-1006",
+    "name": "Gajar Ka Halwa Pure Ghee",
+    "category": "desserts",
+    "price": "₹260",
+    "desc": "Winter carrot halwa cooked in pure desi ghee with khoya and cashew nuts.",
+    "tags": [
+      "Seasonal"
+    ],
+    "spice": 0,
+    "isJain": true,
+    "isPopular": false,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-1007",
+    "name": "Nutella Hazelnut Waffle",
+    "category": "desserts",
+    "price": "₹320",
+    "desc": "Crisp Belgian waffle drizzled with Nutella, crushed hazelnut, and whipped cream.",
+    "tags": [
+      "Waffle"
+    ],
+    "spice": 0,
+    "isJain": true,
+    "isPopular": false,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-1008",
+    "name": "Tiramisu Eggless Mousse",
+    "category": "desserts",
+    "price": "₹330",
+    "desc": "Italian coffee-soaked ladyfinger sponge layered with mascarpone cream.",
+    "tags": [
+      "Italian"
+    ],
+    "spice": 0,
+    "isJain": true,
+    "isPopular": false,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-1009",
+    "name": "Matka Kulfi Falooda Royal",
+    "category": "desserts",
+    "price": "₹280",
+    "desc": "Earthen pot kulfi served with basil seeds, rose syrup, and falooda vermicelli.",
+    "tags": [
+      "Traditional"
+    ],
+    "spice": 0,
+    "isJain": true,
+    "isPopular": true,
+    "image": "assets/images/hero.png"
+  },
+  {
+    "id": "item-1010",
+    "name": "Assorted Mithai Tasting Platter",
+    "category": "desserts",
+    "price": "₹390",
+    "desc": "Platter of Kaju Katli, Kesar Peda, Anjeer Roll, and Dry Fruit Barfi.",
+    "tags": [
+      "Royal Platter"
+    ],
+    "spice": 0,
+    "isJain": true,
+    "isPopular": false,
+    "image": "assets/images/hero.png"
+  }
+]
