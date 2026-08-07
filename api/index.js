@@ -251,11 +251,5 @@ const server = http.createServer((req, res) => {
   });
 });
 
-module.exports = (req, res) => handler(req, res);
-if (require.main === module) {
-  server.listen(PORT, () => {
-  console.log(`Papillon Server running on http://localhost:${PORT}`);
-});
 
-}
-module.exports = handler;
+module.exports = (req, res) => handler(req, res);
