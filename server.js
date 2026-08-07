@@ -10,9 +10,7 @@ const LEADS_FILE = path.join(DATA_DIR, 'leads.json');
 const MENU_FILE = path.join(DATA_DIR, 'menu.json');
 
 // Ensure data directory exist
-if (!fs.existsSync(DATA_DIR)) {
-  fs.mkdirSync(DATA_DIR, { recursive: true });
-}
+try { if (!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR, { recursive: true }); } catch(e){}
 
 // Helpers for Data Files
 function readJSON(file, fallback = []) {
@@ -25,7 +23,7 @@ function readJSON(file, fallback = []) {
 }
 
 function writeJSON(file, data) {
-  fs.writeFileSync(file, JSON.stringify(data, null, 2));
+  try { fs.writeFileSync(file, JSON.stringify(data, null, 2)); } catch(e){}
 }
 
 // MIME types for static files
